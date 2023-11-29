@@ -1,0 +1,6 @@
+# Prints Hello World to the console
+
+mkdir build
+cd build
+cmake -S .. -B . # option 1
+cmake .. # Option 2
