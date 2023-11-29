@@ -13,3 +13,6 @@ cmake --build . --target Executable
 cmake .. -DCOMPILE_EXECUTABLE=ON
 
 ######
+cmake -S .. -B . -G # option 1
+cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake -DMY_OPTION=[ON]
