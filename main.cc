@@ -1,8 +1,8 @@
 #include <iostream>
+#include "cuslib.h"
 
 int main()
 {
-    std::cout << "Hello World\n";
-
+    print_hello_world();
     return 0;
 }
