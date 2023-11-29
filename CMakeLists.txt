@@ -9,6 +9,5 @@
 cmake_minimum_required(VERSION 3.22)
 project(LearningCmake VERSION 0.0.1 LANGUAGES C CXX)
 
-add_library(Library STATIC cuslib.cc)
-add_executable(Executable main.cc)
-target_link_libraries(Executable PUBLIC Library)
+add_subdirectory(src)
+add_subdirectory(app)
