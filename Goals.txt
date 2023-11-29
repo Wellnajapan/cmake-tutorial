@@ -1,0 +1,18 @@
+# Prints Hello World to the console
+
+mkdir build
+cd build
+cmake -S .. -B . # option 1
+cmake .. # Option 2
+
+######
+cmake --build . --target Library
+cmake --build . --target Executable
+
+######
+cmake .. -DCOMPILE_EXECUTABLE=ON
+
+######
+cmake -S .. -B . -G # option 1
+cmake -DCMAKE_BUILD_TYPE=Release ..
+cmake -DMY_OPTION=[ON]
