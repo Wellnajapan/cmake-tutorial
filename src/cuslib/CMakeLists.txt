@@ -1,2 +1,3 @@
-add_library(Library STATIC cuslib.cc)
-target_include_directories(Library PUBLIC "./")
+
+add_library(${CUS_LIBRARY_NAME} STATIC cuslib.cc)
+target_include_directories(${CUS_LIBRARY_NAME} PUBLIC "./")

@@ -8,3 +8,8 @@ cmake .. # Option 2
 ######
 cmake --build . --target Library
 cmake --build . --target Executable
+
+######
+cmake .. -DCOMPILE_EXECUTABLE=ON
+
+######
