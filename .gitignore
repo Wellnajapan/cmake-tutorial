@@ -143,3 +143,9 @@ ipch/
 
 # Visual Studio Trace Files
 *.e2e
+
+# Intelij Idea
+.idea
+
+# cmake
+cmake-build-debug
