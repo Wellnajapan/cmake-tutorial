@@ -26,6 +26,7 @@ add_git_submodule(external/httplib)
 option(COMPILE_EXECUTABLE "Whether to compile the executable" ON)
 
 add_subdirectory(configured)
+add_subdirectory(external)
 add_subdirectory(src)
 add_subdirectory(app)
 
