@@ -13,8 +13,15 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-set(CUS_LIBRARY_NAME Library)
+set(CUS_LIBRARY_NAME "cuslib")
 set(APP_EXECUTABLE_NAME Executable)
+
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
+include(AddGitSubmodule)
+
+add_git_submodule(external/json)
+add_git_submodule(external/httplib)
+
 
 option(COMPILE_EXECUTABLE "Whether to compile the executable" ON)
 
