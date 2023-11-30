@@ -17,8 +17,8 @@ set(CUS_LIBRARY_NAME "cuslib")
 set(APP_EXECUTABLE_NAME Executable)
 
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/")
-
 include(AddGitSubmodule)
+include(Docs)
 # include(F
 
 # FetchContent_Declare(
